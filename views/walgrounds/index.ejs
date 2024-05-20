@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walgrounds</title>
+  </head>
+  <body>
+    <h1>All Walgrounds</h1>
+    <ul>
+      <% for(let walground of walgrounds) {%>
+      <li>
+        <a href="/walgrounds/<%= walground._id %>"><%= walground.title %></a>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
